@@ -1,15 +1,15 @@
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
-//This is a calculator making program
+//This is a basic calculator making program
 
 int main()
 {
-    int n,i;
+    int n,i;          //declaring data type for different values
     float result,num=0;
     char choice;
     printf("Enter how many numbers you want to calculate:");
-    scanf("%d",&n);
+    scanf("%d",&n);//store value
     if(n<=0)
     {
         printf("You must enter positive values");
@@ -21,7 +21,7 @@ int main()
         printf("Enter the first number:");
         scanf("%f",&result);
 
-        for(i=1; i<n; i++)
+        for(i=1; i<n; i++)//loop starts for multiple functions
         {
             printf("Enter your choice (+,-,*,/ ):");
             scanf(" %c",&choice);
@@ -29,7 +29,7 @@ int main()
             scanf("%f",&num);
 
             switch(choice)
-            {
+            {               //functions start from here
             case '+':
                 result+=num;
                 break;
